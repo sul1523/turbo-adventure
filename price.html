@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <title>SM-lamka - Корзина</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            width: 95%;
+            height: 70px;
+            border: 2px solid  black;
+            border-radius: 13px;
+            background: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav {
+            width: 95%;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 13px;
+            background: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .h2 {
+            font-size: 26px;
+            
+        }
+
+        .li-h {
+            color: rgb(214, 28, 28);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            font-size: 18px;
+            list-style-type: none;
+            padding: 20px;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: rgb(59, 59, 59);
+        }
+
+        main {
+            flex-wrap: wrap;
+            flex: 1;
+            max-width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            width: 100%;
+            display: flex;
+            border: 2px solid black;
+        }
+
+        
+        footer {
+            text-align: center;
+            margin-top: auto; 
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .footer {
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-around;
+            height: 150px;
+            width: 95%;
+            background: #f3f3f3;
+        }
+
+        .ul-f {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .l-f {
+            margin-top: 10px;
+            padding: 0;
+        }
+        .p-f {
+            font-size: 22px;
+            color: black;
+            margin-top: 5px;
+        }
+
+        .l-f {
+            color: #3b3b3b;
+        }
+
+        .div-card {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .redaction-form {
+            width: 40%;
+            height: auto;
+            border: 1px dotted rgb(122, 122, 122);
+            background: inherit;
+        }
+
+        .catalog {
+            width: 40%;
+            background: #3b3b3b;
+            border: 1px dotted rgb(122, 122, 122);
+            background: inherit;
+        }
+        
+        .maps {
+            background: #7871e252;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            padding: 10%;
+            width: 100%;
+            
+        }
+
+        label {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font: 700;
+            font-size: 22px;
+        }
+
+        input {
+            width: 400px;
+            height: 25px;
+            border-bottom: 1px solid black;
+            background: #fcfcfc;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            color: rgb(39, 30, 13);
+            font-size: 16px;
+        }
+    </style>
+    <header>
+        <div class="header">
+        <div class="name-site">
+            <h2 style=" font-family: Carter One, system-ui; font-weight: 400; font-style: normal;">SM-lamka</h2>
+            <p style="font-size:14px; color: rgba(180, 180, 180, 0.76);">Sport nutrition store</p>
+        </div>
+        <div class="link-site">
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li class="li-h"><a href="#">Корзина</a></li>
+                <li><a href="link.html">Связь</a></li>
+            </ul>
+        </div>
+        <div class="qw">
+            <ul>
+                <li style="font-size: 22px;"><a href="bank.html">0 ₽</a></li>            
+            </ul>
+        </div></div>
+    </header>
+
+    <main>
+        <div class="div-card">
+            <div class="redaction-form">
+                <div class="maps">
+                    <h3>Укажите адрес на карте 📍</h3><br>
+                    <p style="color: black;"></p>
+                </div>
+                <form id="adresses" action="address.html">
+                    <span style="margin-top: 100px;"><label>Фамилия:  </label><input type="text" placeholder="Укажите фамилию" /></span><br>
+                    <span style="margin-top: 10px;"><label>Имя:  </label><input type="text" placeholder="Укажите имя" /></span><br>
+                    <span style="margin-top: 10px;"><label>E-mail:  </label><input type="email" placeholder="Укажите электронную почту..." /></span><br>
+                    <span style="margin-top: 10px;"><label>Номер телефона:  </label><input type="tel" placeholder="Укажите номер телефона..." /></span><br>
+                    <div class="d-b" style="width: 75%; display: flex; justify-content: end; margin-top: 10px;">
+                        <button style="width: 100%; height: 40px; border: 1px solid rgb(83, 83, 83); background: inherit; font-size: 20px;" type="submit">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <p style="font-size: 52px; position: absolute; top: 50%; bottom: 50%;">×</p>
+            <div class="catalog" style="">
+                <span style="display: flex;"><p style="width: 90%; margin: 2%;"><span style="color: black; font-size: 20px;">Креатин </span><span style="color: rgb(82, 82, 82); font-size: 16px;">1 штук 699.00 ₽</span></p><button aria-label="Удалить!" style="width: auto; font-size: 36px; height: auto;background: inherit; color: red; border: none;" onclick="alert('Удалено!')">×</button></span>
+                <span style="display: flex;"><p style="width: 90%; margin: 2%;"><span style="color: black; font-size: 20px;">Энергетик </span><span style="color: rgb(82, 82, 82); font-size: 16px;">2 штук 109.00 ₽</span></p><button aria-label="Удалить!" style="width: auto; font-size: 36px; height: auto;background: inherit; color: red; border: none;" onclick="alert('Удалено!')">×</button></span>
+                <span style="display: flex;"><p style="width: 90%; margin: 2%;"><span style="color: black; font-size: 20px;">Протеин </span><span style="color: rgb(82, 82, 82); font-size: 16px;">1 штук 569.00 ₽</span></p><button aria-label="Удалить!" style="width: auto; font-size: 36px; height: auto;background: inherit; color: red; border: none;" onclick="alert('Удалено!')">×</button></span>
+                <span style="display: flex;"><p style="width: 90%; margin: 2%;"><span style="color: black; font-size: 20px;">Батончик S-lamka </span><span style="color: rgb(82, 82, 82); font-size: 16px;">4 штук 299.00 ₽</span></p><button aria-label="Удалить!" style="width: auto; font-size: 36px; height: auto;background: inherit; color: red; border: none;" onclick="alert('Удалено!')">×</button></span>
+                <span style="display: flex;"><p style="width: 90%; margin: 2%;"><span style="color: black; font-size: 20px;">Пакет </span><span style="color: rgb(82, 82, 82); font-size: 16px;">1 штук 5.00 ₽</span></p><button aria-label="Удалить!" style="width: auto; font-size: 36px; height: auto;background: inherit; color: red; border: none;" onclick="alert('Удалено!')">×</button></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="d-f">
+                <div class="d-ul">
+                    <ul class="ul-f">
+                        <p class="p-f">Контакты</p>
+                        <li class="l-f"><a href="#">Telegram</a></li>
+                        <li class="l-f"><a href="#">VKcontact</a></li>
+                        <li class="l-f"><a href="#">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-f">
+                <div class="d-ul">
+                    <ul class="ul-f">
+                        <p class="p-f">О нас</p>
+                        <li class="l-f"><a href="#">Документация</a></li>
+                        <li class="l-f"><a href="#">Где находимся</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-f">
+                <div class="d-ul">
+                    <ul class="ul-f">
+                        <p class="p-f">О сайте</p>
+                        <li class="l-f"><a href="#">Лицензия</a></li>
+                        <li class="l-f"><a href="#">Продукты</a></li>
+                        <li class="l-f"><a href="#">Цены</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
